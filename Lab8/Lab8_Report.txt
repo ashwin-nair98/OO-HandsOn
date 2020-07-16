@@ -1,0 +1,14 @@
+In DecimalSplitter class isOdd is implemented by checking whether the modulo 2 value of 
+the given number is equal to zero. If it is, false is returned, i.e., the number is even
+and vice-versa.
+
+To get the whole number only, the double can be type casted to int as int will omit the
+fractional part.
+
+To get the fractional part a similar logic can be applied by taking the difference of
+original number and the integer (or whole number part of the number).
+
+Code is written in TestMain to convert the command line argument to required double format.
+
+
+  
