@@ -1,0 +1,12 @@
+The EmployeeDemo class uses the Employee class to store information about employees.
+
+The Employee and Address class are not completed. We can use the information from the 
+EmployeeDemo class to create the Employee and Address classes.
+
+Employee class:
+String name and String empId, Address addr, along with get and set methods.
+
+Address class:
+String addr1, String addr2, String city, String pin along with get and set methods.
+
+The get and set methods are further used in the employee demo class.
