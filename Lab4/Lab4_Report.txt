@@ -1,0 +1,3 @@
+The static int MAX_CAPACITY in Cache class is initialised to 0 within the class itself,
+thus assuming that it is the default value, i.e, anything greater than 0 is a proper value.
+
