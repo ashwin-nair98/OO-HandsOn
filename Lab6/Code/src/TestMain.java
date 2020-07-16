@@ -6,10 +6,16 @@ public class TestMain {
 		int arg2 = 0;
 
 //Read values of arg1 and arg2 from Console
+		System.out.println("Enter value 1: ");
+		arg1 = Console.readInt();
+		System.out.println("Enter value 2: ");
+		arg2 = Console.readInt();
 
-
+		
 // Call set methods of SwapData object
-
+		obj.setArg1(arg1);
+		obj.setArg2(arg2);
+		
 		obj.displayValues("Before Swapping...");
 
 		obj.swapValues();

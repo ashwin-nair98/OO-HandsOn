@@ -1,0 +1,8 @@
+The ResultFinder class has been enhanced with getters and setters for the marks.
+The displayMarks and the getResult functions have been defined. As no criteria for 
+results were provided, it is assumed that marks >= 35 is pass and if not, failed. The 
+count of the passed subjects and failed subjects is returned in getResult method.
+
+Added code in TestMain method to extract marks from command line arguments and storing
+within the variables. The set methods from ResultFinder is used to set the marks within the 
+object.

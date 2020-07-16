@@ -1,0 +1,7 @@
+The SwapData class has two data members and the swap method is modified to swap them.
+
+Getters and setters are written for both variables although getters are not being
+accessed in this particular case.
+
+TestMain class now inputs the the two values from the user and sets those as the values
+in SwapData class.
