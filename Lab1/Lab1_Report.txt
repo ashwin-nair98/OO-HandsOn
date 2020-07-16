@@ -1,0 +1,32 @@
+The project contains a base class named Account which manages a user's bank account.
+It stores the following data: 
+- AccNo
+- Name
+- Balance
+
+There are two classes AccManager1 and AccManager2 which access the Account class to
+try and store the same information, and also to retrieve the stored information.
+The implementation of both these classes are different.
+
+The AccManager1 class directly accesses all of the data members of the Account class
+to store and retrieve the required information. This is against Object Oriented principles 
+which state that the data members of a given class should only be accessed by using the functions
+provided by the class. The effects of directly accessing a data member can have unintended
+repercussions as we can see in the following output
+
+Performing Account Transactions using AccManager1...
+AccNo : 004701
+Name : Chandra
+Balance : 45000.0
+Performing Account Transactions using AccManager2...
+AccNo : ICI004701
+Name : Chandra
+Balance : 48825.0
+
+The AccNo displayed by AccManager1 does not have the ICI prefix making it an invalid account
+number. The balance also is different as the Account class implements a computeInterest
+method and calls it from the getBalance method so that the balance can include the interest
+as well. This here could be termed as the most harmful side effect of not accessing an object
+through the intended methods.
+
+AccManager2 implements the OO principles correctly and thus the information given is correct.
