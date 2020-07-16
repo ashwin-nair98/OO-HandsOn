@@ -1,0 +1,4 @@
+The class AccManager had not implemented the fillAccountData Method, thus
+all values were being initiated to null values. 
+
+The implementation has been completed and the program is working as desired.
