@@ -1,0 +1,9 @@
+To swap two variables through a function, they should be passed by reference.
+This is not possible by integers in java.
+
+Thus the scope of the integers is elevated from main method to class so that it can be accessed
+by the swap method as well. This removes the need of passing them as arguments from the 
+function call. 
+
+It has to be noted that such a method cannot be used for any two int variables, but 
+only those stored in class and hard-coded within the swp function. 

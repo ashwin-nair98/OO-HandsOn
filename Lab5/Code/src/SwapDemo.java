@@ -1,15 +1,23 @@
 public class SwapDemo {
+	static int arg1 = 100;
+	static int arg2 = 200;
+	
 	public static void main(String[] args) {
-		int arg1 = 100;
-		int arg2 = 200;
+		
 	
 	// make call to swapValues() and displayValues()
+		displayValues("The arguments before swapping: ", arg1, arg2);
+		swapValues();
+		displayValues("The arguments after swapping: ", arg1, arg2);
 
 	}
 
-	private static void swapValues(int arg1,int arg2) {
+	private static void swapValues() {
 	
 	// Write logic to swap values
+		int temp = arg1;
+		arg1 = arg2;
+		arg2 = temp;
 
 	}
 	
