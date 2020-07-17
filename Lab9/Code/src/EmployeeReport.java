@@ -19,6 +19,15 @@ public class EmployeeReport {
 		displayHeader();
 		
 		// Complete the logic 	
+		System.out.println("EMP_ID\tNAME\tROLE\t\tBASIC\tHRA\tALLOW\tSALARY");
+		for(Employee i: empArr) {
+			System.out.printf(i.getId()+"\t"+i.getName()+"\t");
+			System.out.printf(RoleBuilder.getRoleDescription(i.getRoleId()) + "\t");
+			System.out.printf(i.getBasic()+"\t"+i.getHra()+"\t");
+			System.out.printf(SalaryCalculator.getAllowance(i)+"\t");
+			System.out.printf(SalaryCalculator.getSalary(i)+"\n");
+		}
+		
 		
 		displayFooter(empArr.length);
 		
